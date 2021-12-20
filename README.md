@@ -54,3 +54,6 @@
     git reset <file_name>
     git status
     git checkout <file_name>
+
+
+## Работаем с ветками
