@@ -85,4 +85,14 @@
 
     git branch -D <branch_name>
 
+#### Переименование веток
 
+Переходим в ветку <branch_name>  
+
+    git checkout <branch_name>
+    
+Переименовываем ветку  
+
+    git branch -m <branch_newname>
+    
+    
