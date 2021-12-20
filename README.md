@@ -4,13 +4,13 @@
 
     git status
     
-Добавить сделанные изменения  
+Добавить сделанные изменения:  
 
     git add . -p
     
 Сделать коммит  
 
-    git commit -m "<Comment>"
+    git commit -m "<Comment>":
     
     
 
