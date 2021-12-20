@@ -32,3 +32,6 @@
 
     git commit -m "<Comment>":    
      
+#### Сбросить ненужные изменения до добавления в индекс
+
+    git checkout <file_name>
