@@ -8,5 +8,12 @@
 
     git add . -p
     
+Сделать коммит  
+
+    git commit -m "<Comment>"
+    
+    
+
+    
     
      
