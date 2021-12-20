@@ -95,4 +95,16 @@
 
     git branch -m <branch_newname>
     
+#### Переход по коммитам ветки    
+
+Переход на один коммит назад  
+
+    git checkout HEAD^
     
+Переход на два коммита назад  
+
+    git checkout HEAD^^
+    
+Возвращаемся на последний коммит ветки  
+
+    git checkout <branch_name>
