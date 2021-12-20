@@ -107,4 +107,21 @@
     
 Возвращаемся на последний коммит ветки  
 
-    git checkout <branch_name>
+    git checkout <branch_name>  
+    
+#### Создаem ветку из определённого коммита    
+Перейдем в ветке на один коммит назад
+
+    git checkout HEAD^
+    
+Создаём новую ветку командой  
+
+    git branch <new_branch_name>
+    
+Переходим во вновь созданную ветку <new_branch_name>  
+
+    git checkout <new_branch_name>
+    
+В этой ветке последнего коммита ветки <branch_name> не будет    
+
+    git checkout HEAD^
