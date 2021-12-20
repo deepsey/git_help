@@ -12,7 +12,9 @@
 
     git commit -m "<Comment>":
     
-    
+Сделать пустой коммит:  
+
+    git commit --allow-empty -m "Пустой коммит"    
 
     
     
