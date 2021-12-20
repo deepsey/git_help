@@ -67,6 +67,16 @@
 
     git branch <branch_name>
     
+#### Создать ветку и сделать в ней коммит
+Создаем ветку new_branch:  
+
+    git branch new_branch
+    
+Переходим в ветку new_branch  
+
+    git checkout new_branch
+    
+Далее изменяем и коммитим уже в новой ветке    
     
 
 
