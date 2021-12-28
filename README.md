@@ -139,7 +139,7 @@
 Скопируем команду добавления репозитория со страницы удаленного репозитория, и заменим в ней "origin" на нужное нам.  
 Т.е. будет нечто вроде этого:  
 
-    git remote add ~~origin~~ second https://gitlab.com/deepsey/learning_git.git
+`git remote add ~~origin~~ second https://gitlab.com/deepsey/learning_git.git`
 
     
     
