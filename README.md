@@ -199,6 +199,17 @@
 
 `git push --set-upstream origin new_branch`
 
+    info: detecting host provider for 'https://gitlab.com/'...
+    info: detecting host provider for 'https://gitlab.com/'...
+    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+    remote:
+    remote: To create a merge request for new_branch, visit:
+    remote:   https://gitlab.com/deepsey/slurm_clone/-/merge_requests/new?merge_request%5Bsource_branch%5D=new_branch
+    remote:
+    To https://gitlab.com/deepsey/slurm_clone.git
+     * [new branch]      new_branch -> new_branch
+    Branch 'new_branch' set up to track remote branch 'new_branch' from 'origin'.  
+
 Открываем страницу нашего репозитория на Gitlab и обновляем страницу.  
 Смотрим на список веток, которые нам предлагаются. Там появилась наша новая ветка new_branch
     
