@@ -142,12 +142,39 @@
 `git checkout master ; git push`  
 `git checkout develop ; git push`  
     
-#### Добавление дополнительного удалённого репозитория по ssh
+#### Добавление дополнительного удалённого репозитория по https
 
 Скопируем команду добавления репозитория со страницы удаленного репозитория, и заменим в ней "origin" на нужное нам.  
 Т.е. будет нечто вроде этого:  
 
 `git remote add` ~~origin~~ `second https://gitlab.com/deepsey/learning_git.git`
+
+#### Удаление связи с удалённым репозиторием
+Вы можете увидеть в локальном репозитории связи с удалёнными репозиториями. Это можно проверить командой  
+`git remote`  
+gitlab-learning 
+origin
+
+Давайте с вами удалим связь с удалённым репозиторием gitlab-learning
+Выполняем команду
+
+`git remote remove gitlab-learning`
+
+Как вы можете понимать из команды: remote означает, что мы сейчас будем работать со связями с удалённым репозиторием, remove означает, что мы удаляем запись связи с удалённым репозиторием.  
+
+Теперь вводим снова команду  
+`git remote`  
+Она нам покажет только одну связь origin.
+
+Для полноценного теста давайте попробуем сделать push в наш уже несуществующий удалённым репозиторий
+
+`git push gitlab-learning`
+
+    fatal: 'gitlab-learning' does not appear to be a git repository
+    fatal: Could not read from remote repository.
+
+    Please make sure you have the correct access rights
+    and the repository exists.
 
     
     
