@@ -137,14 +137,10 @@
 #### Отправка изменений всех веток в удалённый репозиторий
 Для этого переходим в ветки, где были сделаны коммиты изменения, и пушим каждую из них, например
 
-`git checkout master + git add . + git commit`
-`git checkout develop + git add . + git commit`
-`git checkout master + git push`
-`git checkout develop + git push`
-
-
-
-
+`git checkout master + git add . + git commit`  
+`git checkout develop + git add . + git commit`  
+`git checkout master + git push`  
+`git checkout develop + git push`  
     
 #### Добавление дополнительного удалённого репозитория по ssh
 
