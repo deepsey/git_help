@@ -2,10 +2,10 @@
 ## Содержание
 ### <a href =https://github.com/deepsey/git_help/blob/main/README.md#%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%B8%D0%BC-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F>Коммитим изменения</a>
 #### - <a href=https://github.com/deepsey/git_help/blob/main/README.md#%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C-%D1%84%D0%B0%D0%B9%D0%BB-%D0%B8%D0%B7-git-%D0%B8-%D0%B7%D0%B0%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%B8%D1%82%D1%8C-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5>Удалить файл из Git и закоммитить изменение</a>
-
-
-
-
+  
+  
+  
+  
 ## Коммитим изменения
 Команда git status показывает список файлов, у которых прошли изменения:  
 
