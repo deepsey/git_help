@@ -289,6 +289,41 @@
 
 
 ## Сложные кейсы слияния веток
+#### Обыкновенное слияние веток
+Создадим ветку main3 из ветки main и перейдем в нее
+
+`git checkout main ; git branch main3 ; git checkout main3`  
+
+Создадим в main3 новый файл file_new и добавим его в индекс git и закоммитим изменения
+
+`git add file_new ; git commit -m "07. Added file_new in main3 branch"`
+
+Добавим нашу новую ветку в удаленный репозиторий
+
+`git push --set-upstream origin main3`
+
+Проверяем коммиты в ветках main и main3
+
+`git checkout main ; git log`
+`git checkout main3 ; git log`
+
+Видим, что логи отличаются на один коммит "07. Added file_new in main3 branch"
+Проведём простое слияние веток (merge). А если быть точным мерджим ветку main3 в ветку main. Переходим в ветку main
+
+`git checkout main`
+
+Выполняем команду 
+
+git merge main3
+
+Система ответила, что merge прошёл.
+Давайте теперь проверим, какие коммиты есть в ветке main. Выполняем команду
+
+`git log`
+
+Обнаруживаем в ней “07. Added file_new in main3 branch”, который пришёл сюда из ветки main3.
+
+
 
 
 
