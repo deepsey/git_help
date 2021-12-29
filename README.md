@@ -304,7 +304,7 @@
 
 Проверяем коммиты в ветках main и main3
 
-`git checkout main ; git log`
+`git checkout main ; git log`  
 `git checkout main3 ; git log`
 
 Видим, что логи отличаются на один коммит "07. Added file_new in main3 branch"
@@ -321,7 +321,11 @@ git merge main3
 
 `git log`
 
-Обнаруживаем в ней “07. Added file_new in main3 branch”, который пришёл сюда из ветки main3.
+Обнаруживаем в ней "07. Added file_new in main3 branch", который пришёл сюда из ветки main3.  
+Пушим ветку в удаленный репозиторий
+
+`git push`
+
 
 
 
