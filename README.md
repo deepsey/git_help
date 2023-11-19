@@ -104,6 +104,8 @@ git checkout <file_name>
     git status
     git checkout <file_name>
 
+---    
+
 
 ## Работаем с ветками
 #### Создаем ветки
