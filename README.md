@@ -26,6 +26,7 @@ $ git remote show -n имя
     git clone <Repository URL> -b <branch name>
 
 ## Коммитим изменения
+#### Создаем коммит
 Команда git status показывает список файлов, у которых прошли изменения:  
 
     git status
