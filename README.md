@@ -48,6 +48,7 @@ git clone <Repository URL> -b <branch name>
 ```
 
 [Содержание](#000) 
+
 ---
 
 ## <a name='002'>02. Коммитим изменения</a>
