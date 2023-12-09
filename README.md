@@ -25,7 +25,7 @@
 - [Обыкновенный push в origin](#0041)
 - [Отправка изменений всех веток в удалённый репозиторий](#0042)
 - [Добавление дополнительного удалённого репозитория по https](#0043)
-- [Обыкновенный push в origin](#0041)
+- [Удаление связи с удалённым репозиторием](#0044)
 - [Обыкновенный push в origin](#0041)
 
 
@@ -257,35 +257,43 @@ git push
 
 `git remote add` ~~origin~~ `second https://gitlab.com/deepsey/learning_git.git`
 
-#### Удаление связи с удалённым репозиторием
+#### <a name='0044'>Удаление связи с удалённым репозиторием</a>
 Вы можете увидеть в локальном репозитории связи с удалёнными репозиториями. Это можно проверить командой  
-`git remote`  
+```
+git remote
+```
+```
+gitlab-learning   
+origin
+```
 
-    gitlab-learning   
-    origin
-
-Давайте с вами удалим связь с удалённым репозиторием gitlab-learning
+Давайте удалим связь с удалённым репозиторием gitlab-learning
 Выполняем команду
+```
+git remote remove gitlab-learning`
+```
 
-`git remote remove gitlab-learning`
-
-Как вы можете понимать из команды: remote означает, что мы сейчас будем работать со связями с удалённым репозиторием, remove означает, что мы удаляем запись связи с удалённым репозиторием.  
+`remote` означает, что мы сейчас будем работать со связями с удалённым репозиторием, `remove` означает, что мы удаляем запись связи с удалённым репозиторием.  
 
 Теперь вводим снова команду  
 
 `git remote`  
 
-Она нам покажет только одну связь origin.
+Она нам покажет только одну связь `origin`.
 
-Для полноценного теста давайте попробуем сделать push в наш уже несуществующий удалённым репозиторий
+Для полноценного теста попробуем сделать push в наш уже несуществующий удалённым репозиторий
+```
+git push gitlab-learning
+```
+```
+fatal: 'gitlab-learning' does not appear to be a git repository
+fatal: Could not read from remote repository.
 
-`git push gitlab-learning`
+Please make sure you have the correct access rights
+and the repository exists.
+```
+[Содержание](#000) 
 
-    fatal: 'gitlab-learning' does not appear to be a git repository
-    fatal: Could not read from remote repository.
-
-    Please make sure you have the correct access rights
-    and the repository exists.
 
 #### Создание новой ветки и пуш новой ветки
 
