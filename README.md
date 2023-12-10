@@ -127,8 +127,9 @@ git checkout <file_name>
     git status
     git checkout <file_name>
 
----    
+[Содержание](#000)     
 
+---    
 
 ##  <a name='003'>03. Ветвление</a>
 #### <a name='0031'>Создать ветку</a>
@@ -170,37 +171,45 @@ git branch -m <branch_newname>
 ```
 git branch -m старое_имя_ветки новое_имя_ветки
 ```
+[Содержание](#000)     
     
 #### <a name='0036'>Переход по коммитам ветки</a>    
 
 Переход на один коммит назад  
-
-    git checkout HEAD^
+```
+git checkout HEAD^
+```
     
 Переход на два коммита назад  
-
-    git checkout HEAD^^
+```
+git checkout HEAD^^
+```
     
 Возвращаемся на последний коммит ветки  
-
-    git checkout <branch_name>  
+```
+    git checkout <branch_name>
+```
+[Содержание](#000)     
     
 #### <a name='0037'>Создаeм ветку из определённого коммита</a>    
 Перейдем в ветке на один коммит назад
-
-    git checkout HEAD^
+```
+git checkout HEAD^
+```
     
 Создаём новую ветку командой  
-
-    git branch <new_branch_name>
+```
+git branch <new_branch_name>
+```
     
 Переходим во вновь созданную ветку <new_branch_name>  
-
-    git checkout <new_branch_name>
-    
+```
+git checkout <new_branch_name>
+```    
 В этой ветке последнего коммита ветки <branch_name> не будет    
-
-    git checkout HEAD^
+```
+git checkout HEAD^
+```
 
 [Содержание](#000) 
 
@@ -254,8 +263,9 @@ git push
 
 Скопируем команду добавления репозитория со страницы удаленного репозитория, и заменим в ней "origin" на нужное нам.  
 Т.е. будет нечто вроде этого:  
-
-`git remote add` ~~origin~~ `second https://gitlab.com/deepsey/learning_git.git`
+```
+git remote add` ~~origin~~ `second https://gitlab.com/deepsey/learning_git.git
+```
 
 #### <a name='0044'>Удаление связи с удалённым репозиторием</a>
 Вы можете увидеть в локальном репозитории связи с удалёнными репозиториями. Это можно проверить командой  
@@ -270,15 +280,15 @@ origin
 Давайте удалим связь с удалённым репозиторием gitlab-learning
 Выполняем команду
 ```
-git remote remove gitlab-learning`
+git remote remove gitlab-learning
 ```
 
 `remote` означает, что мы сейчас будем работать со связями с удалённым репозиторием, `remove` означает, что мы удаляем запись связи с удалённым репозиторием.  
 
 Теперь вводим снова команду  
-
-`git remote`  
-
+```
+git remote  
+```
 Она нам покажет только одну связь `origin`.
 
 Для полноценного теста попробуем сделать push в наш уже несуществующий удалённым репозиторий
