@@ -277,7 +277,7 @@ gitlab-learning
 origin
 ```
 
-Давайте удалим связь с удалённым репозиторием gitlab-learning
+Давайте удалим связь с удалённым репозиторием gitlab-learning.  
 Выполняем команду
 ```
 git remote remove gitlab-learning
