@@ -262,9 +262,18 @@ git push
 #### <a name='0043'>Добавление дополнительного удалённого репозитория</a>
 Привяжем ещё один удалённый репозиторий к локальному репозиторию по протоколу ssh
 Предварительно сгенерируем ключ ssh на локальной машине (`ssh-keygen`) и добавим его публичную часть в удаленный репозиторий.
-Для gihub.com смотрим эту инструкцию https://docs.github.com/ru/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys.
-Для gitlab.com  - https://docs.gitlab.com/ee/user/ssh.html.
+Для gihub.com смотрим эту инструкцию https://docs.github.com/ru/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys.  
+Для gitlab.com  - https://docs.gitlab.com/ee/user/ssh.html.  
 Скопируем адрес удаленного репозитория для доступа по ssh и привяжем еще один удаленный репозиторий, дав ему наименование, например, github_repo
+```
+git remote add github_repo git@github.com:deepsey/learning_git.git
+```
+Выполним команду. Ключ -u по другому --set-upstream. Устанавливает удаленную ветку по умолчанию для текущей локальной ветки. 
+```
+git push -u github_repo master
+```
+Ключ `-u` по другому `--set-upstream` устанавливает удаленную ветку по умолчанию для текущей локальной ветки. Этой командой мы создаём ветку `master` в нашем новом удалённом репозитории.
+
 
 Скопируем команду добавления репозитория со страницы удаленного репозитория, и заменим в ней "origin" на нужное нам.  
 Т.е. будет нечто вроде этого:  
